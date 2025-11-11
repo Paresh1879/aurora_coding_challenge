@@ -2,7 +2,7 @@
 
 # Simple test script for the Member Q&A API
 
-BASE_URL="${1:-https://aurora-coding-challenge.onrender.com/}"
+BASE_URL="${1:-https://aurora-coding-challenge-1.onrender.com/}"
 
 echo "Testing Member Q&A API at $BASE_URL"
 echo ""

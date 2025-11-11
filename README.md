@@ -2,6 +2,8 @@
 
 AI-powered question-answering system that understands natural language questions about member data.
 
+**🚀 Live Demo:** https://aurora-coding-challenge-1.onrender.com
+
 ## Features
 
 - **Smart Search**: Adapts strategy based on question type (counting, dates, preferences)
@@ -97,11 +99,11 @@ uvicorn app.main:app --reload
 ## 🧪 Test It
 
 ```bash
-# Health check
-curl http://localhost:8000/health
+# Test live deployment
+curl https://aurora-coding-challenge-1.onrender.com/health
 
-# Ask questions
-curl -X POST http://localhost:8000/ask \
+# Ask questions (live)
+curl -X POST https://aurora-coding-challenge-1.onrender.com/ask \
   -H "Content-Type: application/json" \
   -d '{"question": "When is Layla going to London?"}'
 
