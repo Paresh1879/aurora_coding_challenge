@@ -107,10 +107,6 @@ curl -X POST https://aurora-coding-challenge-1.onrender.com/ask \
   -H "Content-Type: application/json" \
   -d '{"question": "When is Layla going to London?"}'
 
-**Environment Variables Required:**
-- `OPENAI_API_KEY` - Your OpenAI API key
-- `MEMBER_API_URL` - https://november7-730026606190.europe-west1.run.app
-
 ## 📝 API
 
 ### `POST /ask`
