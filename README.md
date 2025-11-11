@@ -4,6 +4,13 @@ AI-powered question-answering system that understands natural language questions
 
 **🚀 Live Demo:** https://aurora-coding-challenge-1.onrender.com
 
+**Quick Test:**
+```bash
+curl -X POST https://aurora-coding-challenge-1.onrender.com/ask \
+  -H "Content-Type: application/json" \
+  -d '{"question": "What type of flight tickets does Thiago get?"}'
+```
+
 ## Features
 
 - **Smart Search**: Adapts strategy based on question type (counting, dates, preferences)
@@ -105,19 +112,12 @@ curl https://aurora-coding-challenge-1.onrender.com/health
 # Ask questions (live)
 curl -X POST https://aurora-coding-challenge-1.onrender.com/ask \
   -H "Content-Type: application/json" \
-  -d '{"question": "When is Layla going to London?"}'
-
-### `POST /ask`
-```json
-{
-  "question": "When is Layla going to London?"
-}
-```
+  -d '{"question": "What type of flight tickets does Thiago get?"}'
 
 Response:
 ```json
 {
-  "answer": "Layla is planning her trip to London in November 2025."
+  "answer": "Thiago typically gets different types of flight tickets. He often requests business class tickets, as seen in a message dated July 5, 2025, where he asked for a business class ticket to Paris. He also requested first-class tickets to Shanghai on November 11, 2025. Beyond that, Thiago has also requested private jets for his travels to Paris and Barcelona, as seen in messages dated November 8, 2025, and July 2, 2025, respectively."
 }
 ```
 
