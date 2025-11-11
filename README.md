@@ -107,8 +107,6 @@ curl -X POST https://aurora-coding-challenge-1.onrender.com/ask \
   -H "Content-Type: application/json" \
   -d '{"question": "When is Layla going to London?"}'
 
-## 📝 API
-
 ### `POST /ask`
 ```json
 {
