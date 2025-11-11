@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: member-qa-system
+    env: python
+    runtime: python-3.11.9
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: MEMBER_API_URL
+        value: https://november7-730026606190.europe-west1.run.app
+      - key: OPENAI_MODEL
+        value: gpt-4-turbo-preview
+
